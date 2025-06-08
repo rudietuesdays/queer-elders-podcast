@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 
 // NextJS imports
 import Image from "next/image";
+import Script from 'next/script';
 
 // ChakraUI imports
 import {
@@ -36,16 +37,15 @@ export default function Home() {
       bg='#d0e4b4'
       color='#424242'
       fontFamily='mono'
-      height='100vh'
-      width='100vw'
+      overflowX='hidden'
+      paddingY={10}
     >
       <Container
-        paddingY={20}
         maxW='container.md'
         textAlign='center'
       >
 
-        <Center marginTop={4}>
+        <Center>
           <Heading as='h1'>
             <VisuallyHidden>
               Queer Elders Podcast
@@ -61,10 +61,10 @@ export default function Home() {
         <Text fontSize={24} marginTop={12}>
           A podcast for anyone who wants to imagine new, queerer futures by learning from queer and trans elders today – because we have always been here, and we always will be.
         </Text>
-        <Container>
+        <Container marginY={12}>
         {isClient ? (
           <>
-            <div id="buzzsprout-player-16998801"></div><script src="https://www.buzzsprout.com/2466418/episodes/16998801-moving-the-ball-down-the-field-susan-s.js?container_id=buzzsprout-player-16998801&player=small" type="text/javascript" charSet="utf-8"></script>
+            <div id="buzzsprout-player-16998801"></div><Script src="https://www.buzzsprout.com/2466418/episodes/16998801-moving-the-ball-down-the-field-susan-s.js?container_id=buzzsprout-player-16998801&player=small" type="text/javascript" charSet="utf-8"></Script>
           </>
         ) : (
           <Text fontSize={24} marginTop={12}>
