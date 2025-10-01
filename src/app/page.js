@@ -64,7 +64,7 @@ export default function Home() {
         <Container marginY={12}>
         {isClient ? (
           <>
-            <div id="buzzsprout-player-16998801"></div><Script src="https://www.buzzsprout.com/2466418/episodes/16998801-moving-the-ball-down-the-field-susan-s.js?container_id=buzzsprout-player-16998801&player=small" type="text/javascript" charSet="utf-8"></Script>
+            <div id='buzzsprout-large-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2466418.js?container_id=buzzsprout-large-player&player=large'></script>
           </>
         ) : (
           <Text fontSize={24} marginTop={12}>
