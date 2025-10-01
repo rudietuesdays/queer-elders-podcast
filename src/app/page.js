@@ -63,9 +63,7 @@ export default function Home() {
         </Text>
         <Container marginY={12}>
         {isClient ? (
-          <>
-            <div id='buzzsprout-large-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2466418.js?container_id=buzzsprout-large-player&player=large'></script>
-          </>
+            <iframe id="player_iframe" src="https://www.buzzsprout.com/2466418?client_source=large_player&iframe=true&referrer=https%3A%2F%2Fwww.buzzsprout.com%2Fadmin%2F2466418%2Fpodcast%2Fembed" loading="lazy" width="100%" height="280" title="Queer Elders Podcast"/>
         ) : (
           <Text fontSize={24} marginTop={12}>
             More coming soon. Stay tuned.
